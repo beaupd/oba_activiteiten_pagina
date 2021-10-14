@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_oba.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head><body>
+    <div class="bibliotheek-container">
+        <div id="bibliotheek-nl-page">
+            <div class="biebwidget overflowing">
+                <div class="biebwidget-content widget-bnl-siteheader">
+                    <div class="logo-wrapper">
+                        <h1> <a href="/">
+                                <img src="/oba-logo.png" alt="Openbare Bibliotheek Amsterdam" class="sitelogo"> </a>
+                        </h1>
+                    </div>
+                    <p class="skiplinks">
+                        <span>Ga direct naar de </span><a href="#bw-main-content">inhoud</a><span>, het </span><a
+                            href="#widget-identifier-bnl-zoeken">zoekveld</a><span> of het </span><a
+                            href="#widget-identifier-bnl-navigatiebalk">hoofdmenu</a><span>.</span>
+                    </p>
+                    <ul class="metanav">
+                        <li>
+                            <a href="https://www.instagram.com/obamsterdam/">
+                                instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/OBamsterdam">
+                                twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://nl-nl.facebook.com/OBAmsterdam">
+                                facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCONb6bBZQalWcuJ4gXU2pIg">
+                                youtube
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://iguana.oba.nl/iguana/www.main.cls?theme=OBA&amp;surl=useractivities">
+                                Inloggen
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/oba/amsterdam-public-library.html">
+                                English
+                            </a>
+                        </li>
+                        <li class="become-member last loggedout" data-component="bw.bnl.iam">
+                            <a href="/service/word-lid.html">Word <span>lid</span></a>
+                        </li>
+                    </ul>
+                    <div id="widget-identifier-bnl-navigatiebalk" class="biebwidget overflowing" tabindex="-1">
+                        <div class="widget-bnl-navigatiebalk biebwidget-content">
+                            <ul class="nav">
+                                <li class=" home"> <a href="/home.html"><span>Home</span></a> </li>
+                                <li class="active">
+                                    <a href="/activiteiten.html">Activiteiten</a>
+                                </li>
+                                <li>
+                                    <a href="/collectie.html">Collectie</a>
+                                </li>
+                                <li>
+                                    <a href="/leren.html">Leren</a>
+                                </li>
+                                <li>
+                                    <a href="/jeugd.html">Jeugd</a>
+                                </li>
+                                <li>
+                                    <a href="/service.html">service</a>
+                                </li>
+                                <li>
+                                    <a href="/vestigingen.html">Vestigingen</a>
+                                </li>
+                                <li>
+                                    <a href="/over-ons.html">Over ons</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search parbase">
+                        <div class="biebwidget overflowing">
+                            <div class="biebwidget-content widget-bnl-zoekinsiteofcatalogus nofilter">
+                                <form method="get" action="/activiteiten.do" id="widget-identifier-bnl-zoeken"
+                                    tabindex="-1">
+                                    <div class="where">
+                                        <label for="bnl-where-catalog">
+                                            <input type="radio" id="bnl-where-catalog" name="where" value="catalog"
+                                                checked="checked" />
+                                            Zoeken in de catalogus
+                                        </label>
+                                        <label for="bnl-where-website">
+                                            <input type="radio" id="bnl-where-website" name="where" value="website" />
+                                            Zoeken binnen de site
+                                        </label>
+                                    </div>
+                                    <div class="inputwrapper">
+                                        <label for="widget-identifier-bnl-zoeken-input" class="struct">
+                                            Zoekopdracht
+                                        </label>
+                                        <input id="widget-identifier-bnl-zoeken-input" value="" type="text" name="query"
+                                            placeholder="Waar ben je naar op zoek?">
+                                    </div>
+                                    <button type="submit" name="submit"
+                                        class="submit default"><span>Vind</span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="biebwidget-content widget-bnl-category">
+            <section class="activiteiten-page">
+                <img src="header.jpg" />
+                <section id="calender" class="calender week">
+                    <script>
+                        function checkState() {
+                            if (document.getElementById("switch").checked) {
+                                document.getElementById("agenda").classList.add("week");
+                                document.getElementById("agenda").classList.remove("month");
+                                document.getElementById("legenda").classList.add("active");
+                                document.getElementById("calender").classList.add("week");
+                            } else {
+                                document.getElementById("agenda").classList.remove("week");
+                                document.getElementById("agenda").classList.add("month");
+                                document.getElementById("legenda").classList.remove("active");
+                                document.getElementById("calender").classList.remove("week");
+                            }
+                        }</script>
+                    <div class="switch-container">
+                        <label class="switch" onclick="checkState()">
+                            <input id="switch" type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="times">
+                        <div>time</div>
+                        <div>10.00</div>
+                        <div>11.00</div>
+                        <div>12.00</div>
+                        <div>13.00</div>
+                        <div>14.00</div>
+                        <div>15.00</div>
+                        <div>16.00</div>
+                        <div>17.00</div>
+                    </div>
+                    <div id="agenda" class="week">
+                        <div>monday</div>
+                        <div>tuesday</div>
+                        <div>wednesday</div>
+                        <div>thursday</div>
+                        <div>friday</div>
+                        <div>saturday</div>
+                        <div>sunday</div>
+                        <div><span>1</span>
+                            <ul>
+                                <li class="lezen">lezen</li>
+                                <li class="leren">leren</li>
+                            </ul>
+                        </div>
+                        <div><span>2</span>
+                            <ul>
+                                <li class="lezen at-12">lezen</li>
+                            </ul>
+                        </div>
+                        <div><span>3</span>
+                            <ul>
+                                <li class="cultuur at-14">leren</li>
+                            </ul>
+                        </div>
+                        <div><span>4</span>
+                            <ul>
+                                <li class="lezen">lezen</li>
+                                <li class="leren at-15">leren</li>
+                            </ul>
+                        </div>
+                        <div><span>5</span></div>
+                        <div><span>6</span>
+                            <ul>
+                                <li class="lezen at-12">lezen</li>
+                                <li class="cultuur at-17">leren</li>
+                            </ul>
+                        </div>
+                        <div><span>7</span></div>
+                        <div><span>8</span></div>
+                        <div><span>9</span></div>
+                        <div><span>10</span></div>
+                        <div><span>11</span></div>
+                        <div><span>12</span></div>
+                        <div><span>13</span></div>
+                        <div><span>14</span></div>
+                        <div><span>15</span></div>
+                        <div><span>16</span></div>
+                        <div><span>17</span></div>
+                        <div><span>18</span></div>
+                        <div><span>19</span></div>
+                        <div><span>20</span></div>
+                        <div><span>21</span></div>
+                        <div><span>22</span></div>
+                        <div><span>23</span></div>
+                        <div><span>24</span></div>
+                        <div><span>25</span></div>
+                        <div><span>26</span></div>
+                        <div><span>27</span></div>
+                        <div><span>28</span></div>
+                        <div><span>29</span></div>
+                        <div><span>30</span></div>
+                        <div><span>31</span></div>
+                        <div><span>1</span></div>
+                        <div><span>2</span></div>
+                        <div><span>3</span></div>
+                        <div><span>4</span></div>
+                    </div>
+                    <div id="legenda" class="active">
+                        <header><span>Legenda</span></header>
+                        <ul>
+                            <li class="leren">leren</li>
+                            <li class="lezen">lezen</li>
+                            <li class="cultuur">leren</li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="activiteiten-slider">
+                    <script>
+                        function left(x) {
+                            //if(x.parentNode.getElementsByTagName('ul')[0].offsetLeft-x.parentNode.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].offsetWidth  x.parentNode.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].offsetWidth ){ 
+                            x.parentNode.getElementsByTagName('ul')[0].style.left = x.parentNode.getElementsByTagName('ul')[0].offsetLeft - x.parentNode.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].offsetWidth + 'px'
+                            //}
+                        }
+                        function right(x) {
+                            if (x.parentNode.getElementsByTagName('ul')[0].offsetLeft < 0) {
+                                x.parentNode.getElementsByTagName('ul')[0].style.left = x.parentNode.getElementsByTagName('ul')[0].offsetLeft + x.parentNode.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].offsetWidth + 'px'
+                            }
+                        }
+                    </script>
+                    <button onclick="left(this);">&larr;</button>
+                    <button onclick="right(this);">&rarr;</button>
+                    <!-- <button onclick="function left(x){x.parentNode.getElementsByTagName('ul')[0].style.left += x.parentNode.getElementsByTagName('ul')[0].offsetLeft-x.parentNode.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].offsetWidth+'px'; console.log(x.parentNode.getElementsByTagName('ul')[0].offsetLeft);return false};left(this);return false;">&larr;</button>
+                    <button onclick="function right(x){x.parentNode.getElementsByTagName('ul')[0].style.left += x.parentNode.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].offsetWidth+'px'; return false};right(this);return false;">&rarr;</button> -->
+                    <ul>
+                        <li>
+                            <h4>Heading</h4>
+                            <img src="" />
+                            <p>paragraph</p>
+                            <a href="#">Lees meer</a>
+                        </li>
+                        <li>
+                            <h4>Heading</h4>
+                            <img src="" />
+                            <p>paragraph</p>
+                            <a href="#">Lees meer</a>
+                        </li>
+                        <li>
+                            <h4>Heading</h4>
+                            <img src="" />
+                            <p>paragraph</p>
+                            <a href="#">Lees meer</a>
+                        </li>
+                        <li>
+                            <h4>Heading</h4>
+                            <img src="" />
+                            <p>paragraph</p>
+                            <a href="#">Lees meer</a>
+                        </li>
+                        <li>
+                            <h4>Heading</h4>
+                            <img src="" />
+                            <p>paragraph</p>
+                            <a href="#">Lees meer</a>
+                        </li>
+                        <li>
+                            <h4>Heading</h4>
+                            <img src="" />
+                            <p>paragraph</p>
+                            <a href="#">Lees meer</a>
+                        </li>
+                        <li>
+                            <h4>Heading</h4>
+                            <img src="" />
+                            <p>paragraph</p>
+                            <a href="#">Lees meer</a>
+                        </li>
+                        <li>
+                            <h4>Heading</h4>
+                            <img src="" />
+                            <p>paragraph</p>
+                            <a href="#">Lees meer</a>
+                        </li>
+                        <li>
+                            <h4>Heading</h4>
+                            <img src="" />
+                            <p>paragraph</p>
+                            <a href="#">Lees meer</a>
+                        </li>
+                        <li>
+                            <h4>Heading</h4>
+                            <img src="" />
+                            <p>paragraph</p>
+                            <a href="#">Lees meer</a>
+                        </li>
+                        <li>
+                            <h4>Heading</h4>
+                            <img src="" />
+                            <p>paragraph</p>
+                            <a href="#">Lees meer</a>
+                        </li>
+                        <li>
+                            <h4>Heading</h4>
+                            <img src="" />
+                            <p>paragraph</p>
+                            <a href="#">Lees meer</a>
+                        </li>
+                        <li>
+                            <h4>Heading</h4>
+                            <img src="" />
+                            <p>paragraph</p>
+                            <a href="#">Lees meer</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </section>
+            <hr class="divider line">
+            <div class="combocollection parbase section">
+                <div class="container size-2 equal">
+                    <div class="column-1 column parbase">                        <h3>Je krijgt 50% korting op activiteiten met je pas!</h3>
+                        <div class="widget-bnl-combo">
+                            <div class="par_combo_widget parsys"><span class="image parbase section">                                    <img class="bannerimage"
+                                        src="https://www.oba.nl/dam/nieuws/0820_pas_oba-lenerspasfictief-.jpg.rendition.792.1267.jpeg"
+                                        alt="">                                </span>                            </div>                        </div>
+                    </div>                    <div class="column-2 column parbase">                        <h3>Hoe koop ik een kaartje voor een activiteit?</h3>
+                        <div class="widget-bnl-combo">
+                            <div class="par_combo_widget parsys">
+                                <div class="richtext section">                                    <ul>
+                                        <li>Ga naar de activiteit van je keuze in de agenda.</li>
+                                        <li>Klik op ‘bestel kaarten', geef aan hoeveel kaarten je wilt bestellen.</li>
+                                        <li>Selecteer via ‘kaartsoort toevoegen’ je korting op basis van je lidmaatschap
+                                        </li>
+                                        <li>Klik op ‘bestellen’ en log in met je e-mailadres en wachtwoord. Je kan ook
+                                            als gast bestellen.</li>
+                                        <li>Wil je een account aanmaken? Klik dan op ‘registreer je’ en volg de
+                                            instructies.</li>
+                                        <li>De betaling dient binnen 60 minuten volbracht te worden, anders wordt het
+                                            winkelmandje automatisch weer geleegd.&nbsp;Je kunt kaarten kopen door
+                                            online te betalen via iDEAL.</li>
+                                        <li>Je ontvangt van je aanmelding een bevestiging in het opgegeven e-mail adres.
+                                        </li>
+                                        <li>Na het afronden van de betaling ontvang je de kaarten per e-mail. Dit
+                                            e-ticket is jouw toegangsbewijs. Je kunt het bewaren op je smartphone of
+                                            downloaden en uitprinten. Voorafgaand aan de voorstelling kunnen we zowel
+                                            het mobiele als uitgeprinte ticket scannen. Houd daarom je ticket bij de
+                                            hand.<br>
+                                        </li>
+                                    </ul>                                </div>                            </div>                        </div>
+                    </div>
+                </div>            </div>
+            <hr class="divider line">
+            <div class="richtext sectiontitle section">
+                <h3>Blijf op de hoogte van activiteiten en aanbod van de OBA</h3>            </div>
+            <div class="richtext buttonlink section"> <a href="https://www.oba.nl/nieuwsbrief.html"
+                    class="button quaternary">                    schrijf je in voor een van onze nieuwsbrieven
+                </a>            </div>
+            <div class="actionbanner parbase section">
+                <div class="actionbanner">
+                    <h3 class="i">                        Samenwerken met de OBA?
+                    </h3>
+                    <p class="richtext">Heb je zelf een idee voor een activiteit - bijvoorbeeld een workshop,
+                        theatervoorstelling of expositie - in één van de OBA-vestigingen? We horen het graag!</p>
+                    <p class="action">                        <a href="/service/contact/programmering.html" class="button secondary">                            ga naar het aanvraagformulier
+                        </a>                    </p>
+                    <span class="imagewrapper">
+                        <div class="image">                            <img src="https://www.oba.nl/dam/nieuws/1020_act-week-mediawijsheid-tiktoktalk.jpg.rendition.384.614.jpeg"
+                                alt="">                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+            <div class="biebwidget overflowing">
+                <div class="biebwidget-content widget-bnl-footer">
+                    <div class="nav plectrum">
+                        <div class="column">
+                            <h2 class="footer1title h2navtitle parbase">Service</h2>
+                            <ul class="link-list">
+                                <li>
+                                    <a href="/service.html">Veelgestelde vragen</a>
+                                </li>
+                                <li>
+                                    <a href="/vestigingen.html">vestigingen</a>
+                                </li>
+                                <li>
+                                    <a href="/service/word-lid.html">lidmaatschap</a>
+                                </li>
+                                <li>
+                                    <a href="/service/contact.html">contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h2 class="footer2title h2navtitle parbase">Inspiratie</h2>
+                            <ul class="link-list">
+                                <li>
+                                    <a href="/nieuws.html">nieuws</a>
+                                </li>
+                                <li>
+                                    <a href="/service/blijf-op-de-hoogte/Nieuwsbrieven.html">nieuwsbrief</a>
+                                </li>
+                                <li>
+                                    <a href="/service/blijf-op-de-hoogte/social-media.html">social media</a>
+                                </li>
+                                <li>
+                                    <a href="/collectie_oud/leestips.html">leestips &amp; blogs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h2 class="footer3title h2navtitle parbase">Over ons</h2>
+                            <ul class="link-list">
+                                <li>
+                                    <a href="/over-ons/werken-bij-de-oba/vacatures.html">vacatures</a>
+                                </li>
+                                <li>
+                                    <a href="/over-ons/voor-de-pers.html">voor de pers</a>
+                                </li>
+                                <li>
+                                    <a href="/over-ons/partners.html">partners</a>
+                                </li>
+                                <li>
+                                    <a href="/over-ons/fondsenwerving.html">fondsenwerving</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h2 class="footer4title h2navtitle parbase">Zakelijk</h2>
+                            <ul class="link-list">
+                                <li>
+                                    <a href="/leren/oba-school.html">OBA School</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.obacongres.nl/">OBA Congres</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cookie-permission-container">
+                            <h3 class="struct">Cookie toestemming wijzigen</h3>
+                            <p><span>Je gaf toestemming voor het plaatsen van cookies voor statistieken.</span> <button
+                                    class="button quarternary cookie-permission">Trek je toestemming in</button></p>
+                        </div>
+                    </div>
+                    <ul class="metanav">
+                        <li>
+                            <a href="http://oba.nl/privacy">Privacystatement</a>
+                        </li>
+                        <li>
+                            <a href="/disclaimer.html">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body></html>
