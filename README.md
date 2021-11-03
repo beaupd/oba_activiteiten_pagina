@@ -4,6 +4,5 @@
 
 ## Beschrijving
 <!-- Voeg een link toe naar Github Pages 🌐-->
-<!-- Voeg een mooie poster visual toe 📸 -->
+![Digital screen mockup of prototype page](/Frame 1.png)
 
-## Inhoudsopgave
