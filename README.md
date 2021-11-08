@@ -6,6 +6,6 @@ Voor deze sprint van FDND hebben we gewerkt voor een opdracht gever, de opdracht
 [Live site 🌐](oba_activiteiten.student.fdnd.nl/)<br/>
 ![oba mockup](/protype_ss.png)
 
-## Een schets
+## Schets
 ![De schets van de oba agenda mockup](/oba_schets.jpg)
 Dit is een schets van een mockup voor de oba website die inzichten moet beiden om de agenda pagina nog overzichtelijker te maken
